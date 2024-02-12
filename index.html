@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="crossorigin="anonymous"referrerpolicy="no-referrer"/>
+        <link rel="icon" type="image/x-icon" href="/image/favicon.ico">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://kit.fontawesome.com/b7cbe7459f.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="js/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <link rel="stylesheet" href="style/style.css">
+        <link rel="stylesheet" href="style/casecademenu.css">
+        <title>ToDoCode</title>
+    </head>
+<body>
+    <!-- Navbar Menu this here -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 d-flex align-items-center justify-content-between p-3 border-bottom menu-top">
+                <button class="btn btn-outline-secondary p-3 text-white m-1 d-md-none btnmenu"><i class="fa fa-bars"></i></button>
+                <div class="logo dis-non-mobile d-sm-none d-md-block">
+                    <a href="index.html"><img src="image/logo-3.png" alt="logo" style="width: 150px;"></a>
+                </div>
+                <div class="search">
+                    <button class="btn btn-primary rounded-5"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <input type="text" class="form-control rounded-5"  placeholder="عنوان دوره" > 
+                </div>
+                <div class="fs-5 user-sec cursor position-relative">
+                    <i class="fa-solid fa-magnifying-glass d-sm-block d-md-none"> <span class="mx-3"> | </span></i>
+                    <span id="cart-count">0</span>
+                    <i class="fa-solid fa-cart-shopping"> <span class="mx-3"> | </span></i>
+                    <a href="login.html"><i class="fa-solid fa-user"></i></a>
+                </div>
+            </div>
+            <div class="col-12 menu ">
+                <div class="text-end ">
+                    <ul class="casecademenu d-none d-md-block">
+                        <li><a href="index.html">صفحه اصلی</a> </li>
+                        <li><a >دسته بندی محصولات</a>
+                            <ul>
+                                <li><a href="#">طراحی UI و UX</a></li>
+                                <li><a>برنامه نویسی وب</a>
+                                    <ul>
+                                        <li><a>Front-end</a>
+                                            <ul>
+                                                <li><a href="#">HTML و CSS</a></li>
+                                                <li><a href="#">Bootstrap 5</a></li>
+                                                <li><a href="#">Tailwind</a></li>
+                                                <li><a href="#">Javascript</a></li>
+                                                <li><a href="#">Typescript</a></li>
+                                                <li><a href="#">React Js</a></li>
+                                                <li><a href="#">Vue Js</a> </li>
+                                                <li><a href="#">Angular Js</a> </li>
+                                            </ul>
+                                        </li>
+                                        <li><a>Back-end</a>
+                                            <ul>
+                                                <li><a href="#">Python و Django</a></li>
+                                                <li><a href="#">PHP</a></li>
+                                                <li><a href="#">C# و .Net</a></li>
+                                                <li><a href="#">Golang</a></li>
+                                                <li><a href="#">Node js</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a>Database</a>
+                                            <ul>
+                                                <li><a href="#">SQLServer</a></li>
+                                                <li><a href="#">MongoDB</a></li>
+                                                <li><a href="#">MySQL</a></li>
+                                                <li><a href="#">PostgreSQL</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a>برنامه نویسی موبایل</a>
+                                    <ul>
+                                        <li><a>Android</a>
+                                            <ul>
+                                                <li><a href="#">Java</a></li>
+                                                <li><a href="#">Kotlin</a></li>
+                                                <li><a href="#">Flutter</a></li>
+                                                <li><a href="#">React native</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a>Ios</a>
+                                            <ul>
+                                                <li><a href="#">Swift</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a>بوت کمپ</a>
+                                    <ul>
+                                        <li><a href="#">مختصص جنگو</a></li>
+                                        <li><a href="#">متخصص ریکت</a></li>
+                                        <li><a href="#">متخصص Node js</a></li>
+                                    </ul>
+                                </li>
+                                <li><a>سایر آموزش ها</a>
+                                    <ul>
+                                        <li><a href="#">QraphQL</a></li>
+                                        <li><a href="#">Web socket</a></li>
+                                        <li><a href="#">Azure</a></li>
+                                        <li><a href="#">Aws</a></li>
+                                        <li><a href="#">Git</a></li>
+                                        <li><a href="#">PWA</a></li>
+                                        <li><a href="#">Clean Code</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="store.html">فروشگاه</a> </li>
+                        <li><a href="404.html">وبلاگ</a> </li>
+                        <li><a href="about.html">درباره ما</a> </li>
+                        <li><a href="contact.html">ارتباط با ما</a> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header Slider this here -->
+    <div class="container-fluid bg-dev">
+        <div class="row">
+            <div class="swiper swiper1 margin-top">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide d-flex align-items-center justify-content-center ">
+                        <div class="col-12 col-md-12 col-lg-6 mar-t">
+                            <h1 class="fw-bold mx-5">آموزش برنامه نویسی با <span class="td-bg">تو دو کُد</span></h1>
+                            <h3 class="text-c mx-5">آینده از اینجا شروع میشه !</h3>
+                            <p class="fs-5 mt-4 mx-5">دوره‌های تخصصی وبسایت ، جــایی برای کسب تـجربه و مهارت از بهترین مــدرسین برنامه نویسی ایران .</p>
+                        </div>
+                        <div class="col-12 col-md-12 col-lg-6 developer dis-non-mobile">
+                            <img src="image/developer.png" alt="developer">
+                        </div>
+                    </div>
+                    <div class="swiper-slide d-flex align-items-center justify-content-center">
+                        <div class="col-12 col-md-12 col-lg-6 developer dis-non-mobile">
+                            <img src="image/developer-2.png" alt="developer">
+                        </div>
+                        <div class="col-12 col-md-12 col-lg-6 mar-t">
+                            <h1 class="fw-bold mx-5">برگزاری <span class="td-bg">بوت کمپ</span> برنامه نویسی</h1>
+                            <h3 class="mt-4 mx-5">دوره‌های فشرده‌ی آماده‌سازی برنامه‌نویسان برای ورود به بازار کار</ا>
+                            <div class="mt-5">
+                                <button href="#" class="btn btn-primary">مشاهده بوت کمپ ها</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide d-flex align-items-center justify-content-center">
+                        <div class="col-12 col-md-12 col-lg-6 mar-t">
+                            <h1 class="mx-5">جشنواره <span class="td-bg">تخفیفان</span> برنامه نویسی</h1>
+                            <h3 class=" mx-5">تخفیف 60 درصدی بر روی تمامی دوره های آموزشی</h3>
+                            <div class="mx-5 mt-5">
+                                <button class="btn btn-primary px-3">ورود به جشنواره</button>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-12 col-lg-6 developer dis-non-mobile">
+                            <img src="image/developer-3.png" alt="developer">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev opacity-50"></div>
+                <div class="swiper-button-next opacity-50"></div> 
+            </div>
+        </div>
+    </div>
+    <!-- our services this here -->
+    <div class="container">
+        <div class="row margin-top-2">
+            <div class="col-12">
+                <a href="#" class="card border-0">
+                    <img class="rounded-4" src="image/banner-3.png" alt="تخفیفان">
+                </a>
+            </div>
+        </div>
+        <div class="row mini-banner-margin">
+            <div class="col-12 col-lg-6 col-md-6  mx-auto" >
+                <a href="#" class="card border-0">
+                    <img class="rounded-4 w-100" src="image/banner-2.png" alt="بوت کمپ">
+                </a>
+            </div>
+            <div class="col-12 col-lg-6 col-md-6 mx-auto">
+                <a href="#" class="card border-0">
+                    <img class="rounded-4 w-100" src="image/banner-1.png" alt="بوت کمپ">
+                </a>
+            </div>
+        </div>
+        <div class="row margin-top-2">
+            <div class="col-12 col-md-6 col-lg-3 mx-auto sev-item">
+                <div class="card border-0 bg-transparent">
+                    <div class="card-body d-flex mx-auto">
+                        <img src="/image/course.png" alt="">
+                        <h6>بیش از 30 دوره آموزشی</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mx-auto sev-item">
+                <div class="card border-0 bg-transparent">
+                    <div class="card-body d-flex mx-auto">
+                        <img src="/image/pen.png" alt="">
+                        <h6>یادگیری همراه با تمرین</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mx-auto sev-item">
+                <div class="card border-0 bg-transparent">
+                    <div class="card-body d-flex mx-auto">
+                        <img src="/image/wallet-2.png" alt="">
+                        <h6>ضمانت بازگشت وجه</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mx-auto sev-item">
+                <div class="card border-0 bg-transparent">
+                    <div class="card-body d-flex mx-auto">
+                        <img src="/image/phone.png" alt="">
+                        <h6>پشتیبانی 24 ساعته</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-top-2">
+            <div class="col-12 why-us">
+                <h2 class="fw-bold">چرا ما بهترین هستیم !؟</h2>
+                <p class="text-center fs-5 mt-3">دوره های ما کامل ترین و بروز ترین سر فصل ها را دارند .</p>
+            </div>
+        </div>
+        <div class="row margin-top-2">
+            <div class="col-12 col-md-6 col-lg-3 mx-auto ">
+                <div class="card border-0">
+                    <div class="card-body">
+                        <div class="card-b-1">
+                            <img src="image/cup.png" alt="" width="70px" class="image-card">
+                        </div>
+                    </div>
+                    <div class="card-footer border-0 bg-white">
+                        <h5 class="p-1">سابقه درخشان</h5>
+                        <p class="mt-3 just p-1">ما با سابقه ای پنج ساله همراه با تجربیات فراوان و تیمی قوی در کنار شما هنرجویان عزیز هستیم تا آینده درخشانی را رقم بزنید.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mx-auto">
+                <div class="card border-0">
+                    <div class="card-body">
+                        <div class="card-b-1">
+                            <img src="image/code.png" alt="" width="60px" class="image-card-2">
+                        </div>
+                    </div>
+                    <div class="card-footer border-0 bg-white">
+                        <h5 class="p-1">اساتید متخصص</h5>
+                        <p class="mt-3 just p-1">تیم ما از اساتید با تجربه و موفق تشکیل شده که علاوه بر آموزش در طول دوره به شما کمک می کنند تا مشکلات شما رفع گردد .</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mx-auto">
+                <div class="card border-0">
+                    <div class="card-body">
+                        <div class="card-b-1">
+                            <img src="image/search.png" alt="" width="60px" class="image-card-1">
+                        </div>
+                    </div>
+                    <div class="card-footer border-0 bg-white">
+                        <h5 class="p-1">مقالات مفید</h5>
+                        <p class="mt-3 just p-1">در قسمت وبلاگ ما مقالات بروز موجوده که با استفاده از آنها می توانید بار علمی خودتان را ارتقاء دهید و یکی از ویژگی های یک برنامه نویس همین می باشد .</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mx-auto">
+                <div class="card border-0">
+                    <div class="card-body">
+                        <div class="card-b-1">
+                            <img src="image/deal.png" alt="" width="80px" class="image-card-3">
+                        </div>
+                    </div>
+                    <div class="card-footer border-0 bg-white">
+                        <h5 class="p-1">کاریابی</h5>
+                        <p class="mt-3 just p-1">در قسمت فریلنسیگ بعد از اینکه تبدیل به یک متخصص شدید می توانید پروژه های داخلی و بین المللی دریافت و با انجام آن به درآمد ریالی یا دلاری برسید . </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Suggestion Course -->
+    <div class="container">
+        <div class="row course-title margin-top-2">
+            <h2 class="text-end">محصولات منتخب<a class="course-link" href="404.html"></a></h2>
+        </div>
+        <div class="row mt-5">
+            <div class="swiper mySwiper-2 swiper-4">
+                <div class="swiper-wrapper ">
+                    <div class="swiper-slide slide-size col-12 col-md-6 col-lg-3 margin-t ">
+                        <div class="card card-animate position-relative overflow-hidden ">
+                            <div class="cr cr-top cr-right cr-sticky cr-suggest text-white fw-bold">فروش ویژه</div>
+                                <div class="card-img mx-auto">
+                                    <img src="image/course/course-7.png" alt="" width="100%" class="rounded">
+                                </div>
+                                <div class="card-body">
+                                    <a href="#" class="front-tag text-decoration-none rounded-2">فرانت اند</a>
+                                    <h5 class="mt-4"><a href="#" class="text-decoration-none">دوره پروژه محور React و Next</a></h5>
+                                    <p class="mt-3 just">ساخت وبسایت فروشگاهی با React عنوان دوره پروژه محور react در راکت است که قصد داریم در قالب این دوره react را در قالب پروژه ...</p>
+                                    <div class="card-body-flex">
+                                        <div class="d-flex card-body-item">
+                                            <a href="#" class="text-decoration-none">سعید بهجت</a>
+                                            <i class="fa-regular fa-user"></i>
+                                            <span>14.54</span>
+                                            <i class="fa-regular fa-clock"></i>
+                                        </div>
+                                        <div class="d-flex">
+                                            <span class="mx-2">5.0</span> 
+                                            <i class="fa fa-star text-warning"></i>
+                                        </div>
+                                    </div> 
+                                </div>
+                            <div class="card-footer bg-white border-0">
+                                <div class="card-body-flex mb-3">
+                                        <span class="card-footer-item"><i class="fa fa-users"></i> 35432</span>
+                                        <p class="card-text text-start"><span class="badge bg-danger">60%</span><del class="mx-2 text-secondary fs-6">990.000</del><span class="px-1 fw-bold green-txt">594,000</span><img src="image/toman.svg" alt="قیمت" width="20px"></p>
+                                </div>
+                                <button class="btn btn-primary w-100 py-3" onclick="addToCart()">افزودن به سبد خرید</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide-size col-12 col-md-6 col-lg-3 margin-t">
+                        <div class="card card-animate position-relative overflow-hidden">
+                            <div class="cr cr-top cr-right cr-sticky cr-suggest text-white fw-bold">فروش ویژه</div>
+                                <div class="card-img mx-auto">
+                                    <img src="image/course/course-8.png" alt="" width="100%" class="rounded">
+                                </div>
+                                <div class="card-body">
+                                    <a href="#" class="front-tag text-decoration-none rounded-2">فرانت اند</a>
+                                    <h5 class="mt-4"><a href="#" class="text-decoration-none">کتابخانه‌های پرکاربرد React</a></h5>
+                                    <p class="mt-3 just">هدف اصلی که دوره آموزشی کتابخانه‌های پر کاربرد React دنبال می‌کند آشنا کردن شما با کتابخانه‌هایی محبوب و پر استفاده ...</p>
+                                    <div class="card-body-flex">
+                                        <div class="d-flex card-body-item">
+                                            <a href="#" class="text-decoration-none">سعید بهجت</a>
+                                            <i class="fa-regular fa-user"></i>
+                                            <span>06.04</span>
+                                            <i class="fa-regular fa-clock"></i>
+                                        </div>
+                                        <div class="d-flex">
+                                            <span class="mx-2">5.0</span> 
+                                            <i class="fa fa-star text-warning"></i>
+                                        </div>
+                                    </div> 
+                                </div>
+                            <div class="card-footer bg-white border-0">
+                                <div class="card-body-flex mb-3">
+                                        <span class="card-footer-item"><i class="fa fa-users"></i> 25532</span>
+                                        <p class="card-text text-start"><span class="badge bg-danger">60%</span><del class="mx-2 text-secondary fs-6">750.000</del><span class="px-1 fw-bold green-txt">450,000</span><img src="image/toman.svg" alt="قیمت" width="20px"></p>
+                                </div>
+                                <button class="btn btn-primary w-100 py-3" onclick="addToCart()">افزودن به سبد خرید</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide-size col-12 col-md-6 col-lg-3 margin-t">
+                        <div class="card card-animate position-relative overflow-hidden">
+                            <div class="cr cr-top cr-right cr-sticky cr-suggest text-white fw-bold">فروش ویژه</div>
+                                <div class="card-img mx-auto">
+                                    <img src="image/course/course-9.png" alt="" width="100%" class="rounded">
+                                </div>
+                                <div class="card-body">
+                                    <a href="#" class="front-tag text-decoration-none rounded-2">فرانت اند</a>
+                                    <h5 class="mt-4"><a href="#" class="text-decoration-none">آموزش tailwindcss</a></h5>
+                                    <p class="mt-3 just">در قالب آموزش tailwind سعی کردیم این ابزار بسیار کاربردی را در قالب پروژه قدم به قدم، به شما آموزش دهیم. با دوره آموزش tailwindcss  ...</p>
+                                    <div class="card-body-flex">
+                                        <div class="d-flex card-body-item">
+                                            <a href="#" class="text-decoration-none">سعید بهجت</a>
+                                            <i class="fa-regular fa-user"></i>
+                                            <span>07.10</span>
+                                            <i class="fa-regular fa-clock"></i>
+                                        </div>
+                                        <div class="d-flex">
+                                            <span class="mx-2">5.0</span> 
+                                            <i class="fa fa-star text-warning"></i>
+                                        </div>
+                                    </div> 
+                                </div>
+                            <div class="card-footer bg-white border-0">
+                                <div class="card-body-flex mb-3">
+                                        <span class="card-footer-item"><i class="fa fa-users"></i> 21362</span>
+                                        <p class="card-text text-start"><span class="badge bg-danger">60%</span><del class="mx-2 text-secondary fs-6">500.000</del><span class="px-1 fw-bold green-txt">300,000</span><img src="image/toman.svg" alt="قیمت" width="20px"></p>
+                                </div>
+                                <button class="btn btn-primary w-100 py-3" onclick="addToCart()">افزودن به سبد خرید</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide-size col-12 col-md-6 col-lg-3 margin-t">
+                        <div class="card card-animate position-relative overflow-hidden">
+                            <div class="cr cr-top cr-right cr-sticky cr-suggest text-white fw-bold">فروش ویژه</div>
+                                <div class="card-img mx-auto">
+                                    <img src="image/course/course-10.png" alt="" width="100%" class="rounded">
+                                </div>
+                                <div class="card-body">
+                                    <a href="#" class="front-tag text-decoration-none rounded-2">بک اند</a>
+                                    <h5 class="mt-4"><a href="#" class="text-decoration-none">آموزش پیشرفته پایتون</a></h5>
+                                    <p class="mt-3 just">هر زبان برنامه نویسی در کنار ویژگی‌هایی که به صورت مقدماتی و ابتدایی در اختیار توسعه دهندگان‌ش قرار می‌دهد یکسری ویژگی ...</p>
+                                    <div class="card-body-flex">
+                                        <div class="d-flex card-body-item">
+                                            <a href="#" class="text-decoration-none">سعید بهجت</a>
+                                            <i class="fa-regular fa-user"></i>
+                                            <span>07.13</span>
+                                            <i class="fa-regular fa-clock"></i>
+                                        </div>
+                                        <div class="d-flex">
+                                            <span class="mx-2">5.0</span> 
+                                            <i class="fa fa-star text-warning"></i>
+                                        </div>
+                                    </div> 
+                                </div>
+                            <div class="card-footer bg-white border-0">
+                                <div class="card-body-flex mb-3">
+                                        <span class="card-footer-item"><i class="fa fa-users"></i> 25036</span>
+                                        <p class="card-text text-start"><span class="badge bg-danger">60%</span><del class="mx-2 text-secondary fs-6">590.000</del><span class="px-1 fw-bold green-txt">354,000</span><img src="image/toman.svg" alt="قیمت" width="20px"></p>
+                                </div>
+                                <button class="btn btn-primary w-100 py-3" onclick="addToCart()">افزودن به سبد خرید</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide-size col-12 col-md-6 col-lg-3 margin-t">
+                        <div class="card card-animate position-relative overflow-hidden">
+                            <div class="cr cr-top cr-right cr-sticky cr-suggest text-white fw-bold">فروش ویژه</div>
+                                <div class="card-img mx-auto">
+                                    <img src="image/course/course-11.png" alt="" width="100%" class="rounded">
+                                </div>
+                                <div class="card-body">
+                                    <a href="#" class="front-tag text-decoration-none rounded-2">بک اند</a>
+                                    <h5 class="mt-4"><a href="#" class="text-decoration-none">آموزش پروژه محور لاراول</a></h5>
+                                    <p class="mt-3 just">آموزش لاراول آن هم با پروژه در یک آموزش پروژه محور لاراول یک شانس برای یادگیری بهتر و کاربردی‌تر لاراول محسوب می‌شود که ...</p>
+                                    <div class="card-body-flex">
+                                        <div class="d-flex card-body-item">
+                                            <a href="#" class="text-decoration-none">سعید بهجت</a>
+                                            <i class="fa-regular fa-user"></i>
+                                            <span>36.13</span>
+                                            <i class="fa-regular fa-clock"></i>
+                                        </div>
+                                        <div class="d-flex">
+                                            <span class="mx-2">5.0</span> 
+                                            <i class="fa fa-star text-warning"></i>
+                                        </div>
+                                    </div> 
+                                </div>
+                            <div class="card-footer bg-white border-0">
+                                <div class="card-body-flex mb-3">
+                                        <span class="card-footer-item"><i class="fa fa-users"></i> 26322</span>
+                                        <p class="card-text text-start"><span class="badge bg-danger">60%</span><del class="mx-2 text-secondary fs-6">829.000</del><span class="px-1 fw-bold green-txt">497,000</span><img src="image/toman.svg" alt="قیمت" width="20px"></p>
+                                </div>
+                                <button class="btn btn-primary w-100 py-3" onclick="addToCart()">افزودن به سبد خرید</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide-size col-12 col-md-6 col-lg-3 margin-t ">
+                        <div class="card card-animate position-relative overflow-hidden">
+                            <div class="cr cr-top cr-right cr-sticky cr-suggest text-white fw-bold">فروش ویژه</div>
+                                <div class="card-img mx-auto">
+                                    <img src="image/course/course-12.png" alt="" width="100%" class="rounded">
+                                </div>
+                                <div class="card-body">
+                                    <a href="#" class="front-tag text-decoration-none rounded-2">فرانت اند</a>
+                                    <h5 class="mt-4"><a href="#" class="text-decoration-none">آموزش انگولار</a></h5>
+                                    <p class="mt-3 just">در دوره آموزش انگولار ما سعی داریم به شما کمک کنیم Angular را ساده و قدم به قدم به شکل کامل و با جزئیات یاد بگیرید ...</p>
+                                    <div class="card-body-flex">
+                                        <div class="d-flex card-body-item">
+                                            <a href="#" class="text-decoration-none">سعید بهجت</a>
+                                            <i class="fa-regular fa-user"></i>
+                                            <span>12.17</span>
+                                            <i class="fa-regular fa-clock"></i>
+                                        </div>
+                                        <div class="d-flex">
+                                            <span class="mx-2">5.0</span> 
+                                            <i class="fa fa-star text-warning"></i>
+                                        </div>
+                                    </div> 
+                                </div>
+                            <div class="card-footer bg-white border-0">
+                                <div class="card-body-flex mb-3">
+                                        <span class="card-footer-item"><i class="fa fa-users"></i> 22132</span>
+                                        <p class="card-text text-start"><span class="badge bg-danger">60%</span><del class="mx-2 text-secondary fs-6">350.000</del><span class="px-1 fw-bold green-txt">210,000</span><img src="image/toman.svg" alt="قیمت" width="20px"></p>
+                                </div>
+                                <button class="btn btn-primary w-100 py-3" onclick="addToCart()">افزودن به سبد خرید</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-prev bg-primary bg-opacity-10 rounded-pill p-5"></div>
+                <div class="swiper-button-next bg-primary bg-opacity-10 rounded-pill p-5"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Courses this here -->
+    <div class="container">
+        <div class="row course-title">
+            <h2 class="text-end">دوره های آموزشی<a class="course-link" href="404.html"><span>مشاهده همه دوره ها <i class="fa fa-arrow-left"></i></span></a></h2>
+        </div>
+        <div class="row mt-5">
+            <div class="col-12 col-md-6 col-lg-4 mx-auto margin-t">
+                <div class="card card-animate position-relative overflow-hidden bg-dev">
+                <div class="cr cr-top cr-right cr-sticky cr-red text-white fw-bold">تخفیف ویژه</div>
+                    <div class="card-img mx-auto">
+                        <img src="image/course/course-1.jpg" alt="" width="100%" class="rounded">
+                    </div>
+                    <div class="card-body">
+                        <a href="#" class="front-tag text-decoration-none rounded-2">فرانت اند</a>
+                        <h5 class="mt-4"><a href="#" class="text-decoration-none">آموزش PHP MVC</a></h5>
+                        <p class="mt-3 just">قدم به قدم در قالب ساخت یک فریمورک از صفر کار با الگو MVC را ...</p>
+                        <div class="card-body-flex">
+                            <div class="d-flex card-body-item">
+                                <a href="#" class="text-decoration-none">سعید بهجت</a>
+                                <i class="fa-regular fa-user"></i>
+                                <span>18.45</span>
+                                <i class="fa-regular fa-clock"></i>
+                            </div>
+                            <div class="d-flex">
+                                <span class="mx-2">5.0</span> 
+                                <i class="fa fa-star text-warning"></i>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="card-footer bg-dev border-0">
+                        <div class="card-body-flex mb-3">
+                            <span class="card-footer-item"><i class="fa fa-users"></i> 148</span>
+                            <p class="card-text text-start"><span class="badge bg-danger">60%</span><del class="mx-2 text-secondary del-fs">750.000</del><span class="px-1 fw-bold green-txt">450,000</span><img src="image/toman.svg" alt="قیمت" width="20px"></p>
+                        </div>
+                        <button class="btn btn-primary w-100 py-3" onclick="addToCart()">افزودن به سبد خرید</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mx-auto margin-t ">
+                <div class="card card-animate position-relative overflow-hidden bg-dev">
+                    <div class="cr cr-top cr-right cr-sticky cr-red text-white fw-bold">تخفیف ویژه</div>
+                    <div class="card-img-top">
+                        <img src="image/course/course-2.png" alt="" width="100%" class="rounded">
+                    </div>
+                    <div class="card-body bg-dev">
+                        <a href="#" class="front-tag text-decoration-none rounded-2">فرانت اند</a>
+                        <h5 class="mt-4"><a href="#" class="text-decoration-none">آموزش ری اکت ( ReactJS )</a></h5>
+                        <p class="mt-3">حدود 40 ساعت آموزش جامع و تخصصی ری اکت!  شما در دوره آموزش ری اکت  ...</p>
+                        <div class="card-body-flex">
+                            <div class="d-flex card-body-item">
+                                <a href="#" class="text-decoration-none">سعید بهجت</a>
+                                <i class="fa-regular fa-user"></i>
+                                <span>99.17</span>
+                                <i class="fa-regular fa-clock"></i>
+                            </div>
+                            <div class="d-flex">
+                                <span class="mx-2">5.0</span> 
+                                <i class="fa fa-star text-warning"></i>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="card-footer bg-dev border-0">
+                        <div class="card-body-flex mb-3">
+                            <span class="card-footer-item"><i class="fa fa-users"></i> 1357</span>
+                            <p class="card-text text-start"><span class="badge bg-danger">60%</span><del class="mx-2 text-secondary del-fs">4.300.000</del><span class="px-1 fw-bold green-txt">2,580,000</span><img src="image/toman.svg" alt="قیمت" width="20px"></p>
+                        </div>
+                        <button class="btn btn-primary w-100 py-3" onclick="addToCart()">افزودن به سبد خرید</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mx-auto margin-t">
+                <div class="card card-animate position-relative overflow-hidden bg-dev">
+                    <div class="cr cr-top cr-right cr-sticky cr-red text-white fw-bold">تخفیف ویژه</div>
+                    <div class="card-img-top">
+                        <img src="image/course/vue.png" alt="" width="100%" class="rounded">
+                    </div>
+                    <div class="card-body bg-dev">
+                        <a href="#" class="front-tag text-decoration-none rounded-2">فرانت اند</a>
+                        <h5 class="mt-4"><a href="#" class="text-decoration-none">آموزش کامل VUE JS 3</a></h5>
+                        <p class="mt-3">در دوره آموزش ویو جی اس مقدماتی تا پیشرفته میتونی ویو ...</p>
+                        <div class="card-body-flex">
+                            <div class="d-flex card-body-item">
+                                <a href="#" class="text-decoration-none">سعید بهجت</a>
+                                <i class="fa-regular fa-user"></i>
+                                <span>13.04</span>
+                                <i class="fa-regular fa-clock"></i>
+                            </div>
+                            <div class="d-flex">
+                                <span class="mx-2">4.8</span> 
+                                <i class="fa fa-star text-warning"></i>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="card-footer bg-dev border-0">
+                        <div class="card-body-flex mb-3">
+                            <span class="card-footer-item"><i class="fa fa-users"></i> 13917</span>
+                            <p class="card-text text-start"><span class="badge bg-danger">60%</span><del class="mx-2 text-secondary del-fs">450.000</del><span class="px-1 fw-bold green-txt">270,000</span><img src="image/toman.svg" alt="قیمت" width="20px"></p>
+                        </div>
+                        <button class="btn btn-primary w-100 py-3" onclick="addToCart()">افزودن به سبد خرید</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mx-auto margin-t ">
+                <div class="card card-animate position-relative overflow-hidden bg-dev">
+                    <div class="cr cr-top cr-right cr-sticky cr-red text-white fw-bold">تخفیف ویژه</div>
+                    <div class="card-img-top">
+                        <img src="image/course/course-3.png" alt="" width="100%" class="rounded">
+                    </div>
+                    <div class="card-body bg-dev">
+                        <a href="#" class="front-tag text-decoration-none rounded-2"> بک اند</a>
+                        <h5 class="mt-4"><a href="#" class="text-decoration-none">آموزش NodeJS</a></h5>
+                        <p class="mt-3 just">الان و امروز کمتر کسی هست که از بازار کار داغ نود جی اس با خبر نباشه و ...</p>
+                        <div class="card-body-flex">
+                            <div class="d-flex card-body-item">
+                                <a href="#" class="text-decoration-none">سعید بهجت</a>
+                                <i class="fa-regular fa-user"></i>
+                                <span>54.14</span>
+                                <i class="fa-regular fa-clock"></i>
+                            </div>
+                            <div class="d-flex">
+                                <span class="mx-2">5.0</span> 
+                                <i class="fa fa-star text-warning"></i>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="card-footer bg-dev border-0">
+                        <div class="card-body-flex mb-3">
+                            <span class="card-footer-item"><i class="fa fa-users"></i> 194</span>
+                            <p class="card-text text-start"><span class="badge bg-danger">60%</span><del class="mx-2 text-secondary del-fs">4.350.000</del><span class="px-1 fw-bold green-txt">2,610,000</span><img src="image/toman.svg" alt="قیمت" width="20px"></p>
+                        </div>
+                        <button class="btn btn-primary w-100 py-3" onclick="addToCart()">افزودن به سبد خرید</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mx-auto margin-t">
+                <div class="card card-animate position-relative overflow-hidden bg-dev">
+                    <div class="cr cr-top cr-right cr-sticky cr-red text-white fw-bold">تخفیف ویژه</div>
+                    <div class="card-img-top">
+                        <img src="image/course/course-4.png" alt="" width="100%" class="rounded">
+                    </div>
+                    <div class="card-body bg-dev">
+                        <a href="#" class="front-tag text-decoration-none rounded-2">فرانت اند</a>
+                        <h5 class="mt-4"><a href="#" class="text-decoration-none">آموزش جاوااسکریپت</a></h5>
+                        <p class="mt-3 just">آموزش جاوا اسکریپت برای تمامی افرادی ک قصد ورود به زبان برنامه نویسی ...</p>
+                        <div class="card-body-flex">
+                            <div class="d-flex card-body-item">
+                                <a href="#" class="text-decoration-none">سعید بهجت</a>
+                                <i class="fa-regular fa-user"></i>
+                                <span>88.25</span>
+                                <i class="fa-regular fa-clock"></i>
+                            </div>
+                            <div class="d-flex">
+                                <span class="mx-2">5.0</span> 
+                                <i class="fa fa-star text-warning"></i>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="card-footer bg-dev border-0">
+                        <div class="card-body-flex mb-3">
+                            <span class="card-footer-item"><i class="fa fa-users"></i> 354</span>
+                            <p class="card-text text-start"><span class="badge bg-danger">60%</span><del class="mx-2 text-secondary del-fs">4.000.000</del><span class="px-1 fw-bold green-txt">2.400.000</span><img src="image/toman.svg" alt="قیمت" width="20px"></p>
+                        </div>
+                        <button class="btn btn-primary w-100 py-3" onclick="addToCart()">افزودن به سبد خرید</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mx-auto margin-t">
+                <div class="card card-animate position-relative overflow-hidden bg-dev">
+                    <div class="cr cr-top cr-right cr-sticky cr-red text-white fw-bold">تخفیف ویژه</div>
+                    <div class="card-img-top">
+                        <img src="image/course/course-6.jpg" alt="" width="100%" class="rounded">
+                    </div>
+                    <div class="card-body bg-dev">
+                        <a href="#" class="front-tag text-decoration-none rounded-2">فرانت اند</a>
+                        <a href="#" class="front-tag text-decoration-none rounded-2">بک اند</a>
+                        <h5 class="mt-4"><a href="#" class="text-decoration-none">آموزش git و github</a></h5>
+                        <p class="mt-3 just">گیت یه Version Controller هست که نسخه های مختلف پروژه هامون و ...</p>
+                        <div class="card-body-flex">
+                            <div class="d-flex card-body-item">
+                                <a href="#" class="text-decoration-none">سعید بهجت</a>
+                                <i class="fa-regular fa-user"></i>
+                                <span>12.26</span>
+                                <i class="fa-regular fa-clock"></i>
+                            </div>
+                            <div class="d-flex">
+                                <span class="mx-2">5.0</span> 
+                                <i class="fa fa-star text-warning"></i>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="card-footer bg-dev border-0">
+                        <div class="card-body-flex mb-3">
+                            <span class="card-footer-item"><i class="fa fa-users"></i> 763</span>
+                            <p class="card-text text-start"><span class="badge bg-danger">60%</span><del class="mx-2 text-secondary del-fs">690.000</del><span class="px-1 fw-bold green-txt">414.000</span><img src="image/toman.svg" alt="قیمت" width="20px"></p>
+                        </div>
+                        <button class="btn btn-primary w-100 py-3" onclick="addToCart()">افزودن به سبد خرید</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- blog and magazine -->
+    <div class="container">
+        <div class="row margin-top-2 course-title">
+            <h2 class="text-end">وبلاگ<a class="course-link" href="404.html"><span>مشاهده همه<i class="fa fa-arrow-left"></i></span></a></h2>
+        </div>
+        <div class="row mt-5">
+            <div class="swiper mySwiper swiper-3">
+                <div class="swiper-wrapper ">
+                    <div class="swiper-slide slide-size col-12 col-md-6 col-lg-4 margin-t">
+                        <div class="card">
+                            <div class="card-img-top">
+                                <img src="image/blog/blog-1.png" alt="blog" width="100%" class="rounded">
+                            </div>
+                            <div class="card-body">
+                                <h5><a href="#" class="text-decoration-none">مدت زمان Python یادگیری </a></h5>
+                                <p class="text-secondary just p-1 mt-3">پایتون یک زبان برنامه‌نویسی بسیار محبوب و چند منظوره است که برای انواع مختلفی از کاربردها مورد استفاده قرار می‌گیرد  ...</p>
+                            </div>
+                            <div class="card-footer bg-white border-0">
+                                <div class="card-body-flex mb-3">
+                                    <a href="#" class="card-footer-item text-decoration-none"><i class="fa-regular fa-user p-2"></i> سعید بهجت</a>
+                                    <span class="card-footer-item">1402/07/17 <i class="fa-regular fa-calendar p-2"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide-size col-12 col-md-6 col-lg-4 margin-t">
+                        <div class="card">
+                            <div class="card-img-top">
+                                <img src="image/blog/blog-2.png" alt="blog" width="100%" class="rounded">
+                            </div>
+                            <div class="card-body">
+                                <h5><a href="#" class="text-decoration-none">آموزش سریع دستورات SQL</a></h5>
+                                <p class="text-secondary just p-1 mt-3">SQL مخفف عبارت Structured Query Language به معنی زبان پرس‌وجوی ساختار یافته است. این زبان یک زبان استاندارد برای دسترسی یک  ...</p>
+                            </div>
+                            <div class="card-footer bg-white border-0">
+                                <div class="card-body-flex mb-3">
+                                    <a href="#" class="card-footer-item text-decoration-none"><i class="fa-regular fa-user p-2"></i> سعید بهجت</a>
+                                    <span class="card-footer-item">1402/07/06 <i class="fa-regular fa-calendar p-2"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide-size col-12 col-md-6 col-lg-4 margin-t">
+                        <div class="card">
+                            <div class="card-img-top">
+                                <img src="image/blog/blog-3.png" alt="blog" width="100%" class="rounded">
+                            </div>
+                            <div class="card-body">
+                                <h5><a href="#" class="text-decoration-none"> مهمترین دستورات گیت
+                                </a></h5>
+                                <p class="text-secondary just p-1 mt-3">در حال حاضر گیت یکی از محبوب‌ترین سیستم‌های کنترل نسخه در بین توسعه‌دهندگان است. می‌توانید با استفاده از گیت تغییرات را دنبال ...</p>
+                            </div>
+                            <div class="card-footer bg-white border-0">
+                                <div class="card-body-flex mb-3">
+                                    <a href="#" class="card-footer-item text-decoration-none"><i class="fa-regular fa-user p-2"></i> سعید بهجت</a>
+                                    <span class="card-footer-item">1402/07/10 <i class="fa-regular fa-calendar p-2"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide-size col-12 col-md-6 col-lg-4 margin-t">
+                        <div class="card">
+                            <div class="card-img-top">
+                                <img src="image/blog/blog-4.png" alt="blog" width="100%" class="rounded">
+                            </div>
+                            <div class="card-body">
+                                <h5><a href="#" class="text-decoration-none">WebSocket به زبانی ساده</a></h5>
+                                <p class="text-secondary just p-1 mt-3">اپلیکیشن‌های مدرن امروزی برای انواع حالت‌های ارتباط‌گیری نیازهای مختلفی دارند. تکنولوژی‌های متنوعی نیز در این حوزه‌ها ظهور پیدا کرده که ...</p>
+                            </div>
+                            <div class="card-footer bg-white border-0">
+                                <div class="card-body-flex mb-3">
+                                    <a href="#" class="card-footer-item text-decoration-none"><i class="fa-regular fa-user p-2"></i> سعید بهجت</a>
+                                    <span class="card-footer-item">1402/07/17 <i class="fa-regular fa-calendar p-2"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide-size col-12 col-md-6 col-lg-4 margin-t">
+                        <div class="card">
+                            <div class="card-img-top">
+                                <img src="image/blog/blog-5.png" alt="blog" width="100%" class="rounded">
+                            </div>
+                            <div class="card-body">
+                                <h5><a href="#" class="text-decoration-none">Scrum چیست؟</a></h5>
+                                <p class="text-secondary just p-1 mt-3">اسکرام یک روش سریع برای مدیریت پروژه است. البته باید گفت که اغلب اوقات این اصطلاح در دنیای توسعه نرم‌افزار استفاده شده و منظور ما ...</p>
+                            </div>
+                            <div class="card-footer bg-white border-0">
+                                <div class="card-body-flex mb-3">
+                                    <a href="#" class="card-footer-item text-decoration-none"><i class="fa-regular fa-user p-2"></i> سعید بهجت</a>
+                                    <span class="card-footer-item">1402/07/06 <i class="fa-regular fa-calendar p-2"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide-size col-12 col-md-6 col-lg-4 margin-t">
+                        <div class="card">
+                            <div class="card-img-top">
+                                <img src="image/blog/blog-6.png" alt="blog" width="100%" class="rounded">
+                            </div>
+                            <div class="card-body">
+                                <h5><a href="#" class="text-decoration-none">بهترین theme ها برای VSCode
+                                </a></h5>
+                                <p class="text-secondary just p-1 mt-3">ویرایشگر کد Visual Studio Code چند سالی است که به محبوبیت فراوانی دست پیدا کرده و توسعه دهندگان بسیار زیادی را به سمت خود ...</p>
+                            </div>
+                            <div class="card-footer bg-white border-0">
+                                <div class="card-body-flex mb-3">
+                                    <a href="#" class="card-footer-item text-decoration-none"><i class="fa-regular fa-user p-2"></i> سعید بهجت</a>
+                                    <span class="card-footer-item">1402/07/10 <i class="fa-regular fa-calendar p-2"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-prev bg-primary bg-opacity-10 rounded-pill p-5"></div>
+                <div class="swiper-button-next bg-primary bg-opacity-10 rounded-pill p-5"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Commentbox this here -->
+    <div class="container-fluid bg-dev">
+        <div class="row margin-top-2">
+            <h2 class="mt-5">نظرات دانشجویان</h2>
+        </div>
+        <div class="row p-4">
+            <div class="swiper swiper-2 swiper2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide ">
+                        <div class="card border-0 bg-transparent">
+                            <div class="card-img-top text-center my-3">
+                                <img class="card-img-top rounded-pill" src="image/photo_2023-06-12_22-25-52.jpg" alt="Card image cap" style="width: 150px;">
+                            </div>
+                            <div class="card-body text-center card-detail">
+                                <p class="card-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد.</p>
+                                <i class="fa-solid fa-quote-right text-primary fs-1"></i>
+                                <h5 class="card-title my-3">سعید بهجت</h5>
+                                <p class="text-center">دانشجوی دوره</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide ">
+                        <div class="card border-0 bg-transparent">
+                            <div class="card-img-top text-center my-3">
+                                <img class="card-img-top rounded-pill" src="image/photo_2023-02-24_13-49-17.jpg" alt="Card image cap" style="width: 150px;">
+                            </div>
+                            <div class="card-body text-center card-detail">
+                                <p class="card-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد.</p>
+                                <i class="fa-solid fa-quote-right text-primary fs-1"></i>
+                                <h5 class="card-title my-3">سعید بهجت</h5>
+                                <p class="text-center">دانشجوی دوره</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide ">
+                        <div class="card border-0 bg-transparent">
+                            <div class="card-img-top text-center my-3">
+                                <img class="card-img-top rounded-pill" src="image/photo_2020-09-07_20-34-27.jpg" alt="Card image cap" style="width: 150px;">
+                            </div>
+                            <div class="card-body text-center card-detail">
+                                <p class="card-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد.</p>
+                                <i class="fa-solid fa-quote-right text-primary fs-1"></i>
+                                <h5 class="card-title my-3">سعید بهجت</h5>
+                                <p class="text-center">دانشجوی دوره</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev mx-5"></div>
+                <div class="swiper-button-next mx-5"></div>
+            </div>
+        </div>
+            
+    </div>
+    <!-- Footer this here -->
+    <div class="container-fluid ">
+        <div class="row">
+            <div class=" container-fluid bg-footer footer-pattern">
+                <div class="container pt-5">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-3 mx-auto">
+                            <h3 class="text-white mb-5 fw-bold" id="contact">ارتباط با ما</h3>
+                            <p class="text-white"><i class="fa fa-map-marker-alt p-2"></i> مشهد ، وکیل آباد</p>
+                            <p class="text-white"><i class="fa fa-phone p-2"></i>  09027272027</p>
+                            <p class="text-white"><i class="fa fa-envelope p-2"></i> info@todocode.ir</p>
+                            <div class="d-flex social">
+                                <i class="fa fa-instagram text-white rounded-5 ms-0" ></i>
+                                <i class="fa fa-telegram text-white rounded-5"></i>
+                                <i class="fa fa-dribbble text-white rounded-5"></i>
+                                <i class="fa fa-linkedin text-white rounded-5"></i>
+                                <i class="fa fa-youtube text-white rounded-5"></i>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 mx-auto footer-link d-flex flex-column ">
+                            <h3 class="text-white mb-5 fw-bold margin-footer">لینک های مفید</h3>
+                            <a href="store.html" class="text-decoration-none"><i class="fa-solid fa-caret-left "></i><span class="mx-3">فروشگاه</span></a>
+                            <a href="404.html" class="text-decoration-none"><i class="fa-solid fa-caret-left "></i><span class="mx-3">وبلاگ</span></a>
+                            <a href="404.html" class="text-decoration-none"><i class="fa-solid fa-caret-left "></i><span class="mx-3">محصولات منتخب</span></a>
+                            <a href="about.html" class="text-decoration-none"><i class="fa-solid fa-caret-left "></i><span class="mx-3">درباره ما</span></a>
+                            <a href="contact.html" class="text-decoration-none"><i class="fa-solid fa-caret-left "></i><span class="mx-3">ارتباط با ما</span></a>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 mx-auto footer-link d-flex flex-column">
+                            <h4 class="text-white mb-5 fw-bold margin-footer">دوره های آموزشی</h4>
+                            <a href="404.html" class="text-decoration-none"><i class="fa-solid fa-caret-left "></i><span class="mx-3">فرانت اند</span></a>
+                            <a href="404.html" class="text-decoration-none"><i class="fa-solid fa-caret-left "></i><span class="mx-3">بک اند</span></a>
+                            <a href="404.html" class="text-decoration-none"><i class="fa-solid fa-caret-left "></i><span class="mx-3">موبایل</span></a>
+                            <a href="404.html" class="text-decoration-none"><i class="fa-solid fa-caret-left "></i><span class="mx-3">بوت کمپ</span></a>
+                            <a href="404.html" class="text-decoration-none"><i class="fa-solid fa-caret-left "></i><span class="mx-3">طراحی UI و UX</span></a>
+                        </div> 
+                        <div class="col-12 col-md-6 col-lg-3 mx-auto margin-footer">
+                            <h4 class="text-white mb-5 fw-bold">عضویت در خبرنامه</h4>
+                            <p class="text-white">برای اطلاع از آخرین اخبار و بروز رسانی دوره ها در خبرنامه عضو شوید :</p>
+                            <div class="real mt-5">
+                                <input type="email" placeholder=" ایمیل خود را وارد کنید ..." name="eml" class=" w-100 p-3 rounded-2 border-0">
+                                <button class="btn fw-bold btn-ab text-white">ارسال</button>
+                            </div>
+                        </div> 
+                        <div class="copyright mt-4">
+                            <div class="row">
+                                <div class="col-12 text-center">
+                                    <span class="text-white">Designed By </span><a class="text-decoration-none fw-bold text-white" href="#">Saeid Bahjat</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,182 @@
+$mainColor:#0437f2;
+$secondColor:#000;
+$whiteColor:#fff;
+$whiteColor-2:#f0f0f0;
+$grayColor:#848484;
+$backgroundColor:#f0f9ff;
+$backgroundColor-2:#fff;
+$fontFamilyPlasma: "plasma";
+$fontFamilyYekanBakh: "yekanbakh";
+$fontFamilyYekanbakhBold: "yekanbakh-bold";
+
+@font-face {
+    font-family: "plasma";
+    src: url("../font/PlasmaSquareDots-Bold.woff") format("woff"),
+  }
+  @font-face {
+    font-family: "yekanbakh";
+    src: url("../font/YekanBakh-SemiBold.woff") format("woff"),
+  }
+  @font-face {
+    font-family: "yekanbakh-bold";
+    src: url("../font/YekanBakh-ExtraBold.woff") format("woff"),
+  }
+
+@media all and (max-width: 767.99px){
+    .casecademenu{
+        position: absolute;
+        width: 100%;
+        right: 0px;
+        
+    }
+    .casecademenu a,.casecademenu a:not([href]){
+        width: 100%;
+        padding: 8px 15px;
+    }
+    .casecademenu>li{
+        display: block;
+    }
+    .casecademenu ul{
+        width: 100%;
+    }
+    .casecademenu .activeul{
+        display: block !important;
+    }
+    .casecademenu>li li>a:not([href]):after{
+        content: "\2B9F";
+        color: $mainColor;
+        display: inline-block;
+        float: left;
+    }
+
+}
+
+@media all and (min-width: 768px) and (max-width:1023.999px) {
+    .casecademenu a,.casecademenu a:not([href]) {
+        min-width: 120px ;
+        font-size: 10.5px;
+        padding: 10px 5px;
+    }
+    .casecademenu>li{
+        display: inline-block;
+    }
+    .casecademenu ul ul {
+        position: absolute;
+    }
+    .casecademenu>li>ul {
+        position: absolute;
+        
+    }
+    .casecademenu li:hover>ul{
+        display: block;
+    }
+    .casecademenu>li li>a:not([href]):after{
+        content: "\2B9C";
+        display: inline-block;
+        float: left;
+        color: $mainColor;
+        margin-right: 8px;
+    }
+}
+@media all and (min-width:1024px) and (max-width:1199.99px){
+    .casecademenu a,.casecademenu a:not([href]) {
+        min-width: 140px;
+        font-size: 12px;
+        font-weight: 600;
+        padding: 5px 8px;
+    }
+    .casecademenu>li{
+        display: inline-block;
+    }
+    .casecademenu ul ul {
+        position: absolute;
+    }
+    .casecademenu>li>ul {
+        position: absolute;
+        
+    }
+    .casecademenu li:hover>ul{
+        display: block;
+    }
+    .casecademenu>li li>a:not([href]):after{
+        content: "\2B9C";
+        display: inline-block;
+        float: left;
+        color: $mainColor;
+        margin-right: 8px;
+    }
+}
+
+@media all and (min-width: 1200px) {
+    .casecademenu a,.casecademenu a:not([href]) {
+        min-width: 170px ;
+        font-size: 14px;
+        font-weight: 600;
+        padding: 8px 15px;
+    }
+    .casecademenu>li{
+        display: inline-block;
+    }
+    .casecademenu ul ul {
+        position: absolute;
+    }
+    .casecademenu>li>ul {
+        position: absolute;
+        
+    }
+    .casecademenu li:hover>ul{
+        display: block;
+    }
+    .casecademenu>li li>a:not([href]):after{
+        content: "\2B9C";
+        display: inline-block;
+        float: left;
+        color: $mainColor;
+        margin-right: 8px;
+    }
+}
+
+.casecademenu{
+    z-index: 800;
+}
+.casecademenu,.casecademenu ul{
+    
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.casecademenu li{
+    position: relative;
+}
+.casecademenu>li>ul{
+    z-index: 950;
+}
+.casecademenu ul ul{
+    right: 100%;
+    top: 0px;
+    z-index: 1000;
+}
+.casecademenu a,.casecademenu a:not([href]){
+    display: inline-block;
+    text-decoration: none;
+    color: $secondColor;
+    text-align: center;
+    background: $backgroundColor-2;
+}
+.casecademenu ul{
+    display: none;
+}
+
+.casecademenu li:hover>a,.activea{
+    background:$mainColor !important;
+    color: $backgroundColor-2 !important;
+    
+}
+.casecademenu>li>a:not([href]):after{
+    display: inline-block;
+    content: "\2B9F";
+    color: $mainColor;
+    float: left;
+    
+}

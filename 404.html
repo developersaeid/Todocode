@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="style/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="crossorigin="anonymous"referrerpolicy="no-referrer"/>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://kit.fontawesome.com/b7cbe7459f.js" crossorigin="anonymous"></script>
+        <link rel="icon" type="image/x-icon" href="/image/favicon.ico">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <link rel="stylesheet" href="style/casecademenu.css">
+        <link rel="stylesheet" href="style/style.css">
+        <script src="js/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <title>ToDoCode</title>
+    </head>
+<body>
+    
+    <!-- Navbar Menu this here -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 d-flex align-items-center justify-content-between p-3 border-bottom menu-top">
+                <button class="btn btn-outline-secondary p-3 text-white m-1 d-md-none btnmenu"><i class="fa fa-bars"></i></button>
+                <div class="logo dis-non-mobile d-sm-none d-md-block">
+                    <a href="index.html"><img src="image/logo-3.png" alt="logo" style="width: 150px;"></a>
+                </div>
+                <div class="search">
+                    <button class="btn btn-primary rounded-5"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <input type="text" class="form-control rounded-5"  placeholder="عنوان دوره" > 
+                </div>
+                <div class="fs-5 user-sec cursor position-relative">
+                    <i class="fa-solid fa-magnifying-glass d-sm-block d-md-none"> <span class="mx-3"> | </span></i>
+                    <span id="cart-count">0</span>
+                    <i class="fa-solid fa-cart-shopping"> <span class="mx-3"> | </span></i>
+                    <a href="login.html"><i class="fa-solid fa-user"></i></a>
+                </div>
+            </div>
+            <div class="col-12 menu ">
+                <div class="text-end ">
+                    <ul class="casecademenu d-none d-md-block">
+                        <li><a href="index.html">صفحه اصلی</a> </li>
+                        <li><a >دسته بندی محصولات</a>
+                            <ul>
+                                <li><a href="#">طراحی UI و UX</a></li>
+                                <li><a>برنامه نویسی وب</a>
+                                    <ul>
+                                        <li><a>Front-end</a>
+                                            <ul>
+                                                <li><a href="#">HTML و CSS</a></li>
+                                                <li><a href="#">Bootstrap 5</a></li>
+                                                <li><a href="#">Tailwind</a></li>
+                                                <li><a href="#">Javascript</a></li>
+                                                <li><a href="#">Typescript</a></li>
+                                                <li><a href="#">React Js</a></li>
+                                                <li><a href="#">Vue Js</a> </li>
+                                                <li><a href="#">Angular Js</a> </li>
+                                            </ul>
+                                        </li>
+                                        <li><a>Back-end</a>
+                                            <ul>
+                                                <li><a href="#">Python و Django</a></li>
+                                                <li><a href="#">PHP</a></li>
+                                                <li><a href="#">C# و .Net</a></li>
+                                                <li><a href="#">Golang</a></li>
+                                                <li><a href="#">Node js</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a>Database</a>
+                                            <ul>
+                                                <li><a href="#">SQLServer</a></li>
+                                                <li><a href="#">MongoDB</a></li>
+                                                <li><a href="#">MySQL</a></li>
+                                                <li><a href="#">PostgreSQL</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a>برنامه نویسی موبایل</a>
+                                    <ul>
+                                        <li><a>Android</a>
+                                            <ul>
+                                                <li><a href="#">Java</a></li>
+                                                <li><a href="#">Kotlin</a></li>
+                                                <li><a href="#">Flutter</a></li>
+                                                <li><a href="#">React native</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a>Ios</a>
+                                            <ul>
+                                                <li><a href="#">Swift</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a>بوت کمپ</a>
+                                    <ul>
+                                        <li><a href="#">مختصص جنگو</a></li>
+                                        <li><a href="#">متخصص ریکت</a></li>
+                                        <li><a href="#">متخصص Node js</a></li>
+                                    </ul>
+                                </li>
+                                <li><a>سایر آموزش ها</a>
+                                    <ul>
+                                        <li><a href="#">QraphQL</a></li>
+                                        <li><a href="#">Web socket</a></li>
+                                        <li><a href="#">Azure</a></li>
+                                        <li><a href="#">Aws</a></li>
+                                        <li><a href="#">Git</a></li>
+                                        <li><a href="#">PWA</a></li>
+                                        <li><a href="#">Clean Code</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="store.html">فروشگاه</a> </li>
+                        <li><a href="404.html">وبلاگ</a> </li>
+                        <li><a href="about.html">درباره ما</a> </li>
+                        <li><a href="contact.html">ارتباط با ما</a> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact us section -->
+    <div class="container">
+        <div class="row margin-404">
+            <img src="image/constractor.png" alt="" class="image-404">
+        </div>
+    </div>
+    <!-- Footer this here -->
+    <div class="container-fluid ">
+        <div class="row">
+            <div class=" container-fluid bg-footer footer-pattern">
+                <div class="container pt-5">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-3 mx-auto">
+                            <h3 class="text-white mb-5 fw-bold" id="contact">ارتباط با ما</h3>
+                            <p class="text-white"><i class="fa fa-map-marker-alt p-2"></i> مشهد ، وکیل آباد</p>
+                            <p class="text-white"><i class="fa fa-phone p-2"></i>  09027272027</p>
+                            <p class="text-white"><i class="fa fa-envelope p-2"></i> info@todocode.ir</p>
+                            <div class="d-flex social">
+                                <i class="fa fa-instagram text-white rounded-5 ms-0" ></i>
+                                <i class="fa fa-telegram text-white rounded-5"></i>
+                                <i class="fa fa-dribbble text-white rounded-5"></i>
+                                <i class="fa fa-linkedin text-white rounded-5"></i>
+                                <i class="fa fa-youtube text-white rounded-5"></i>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 mx-auto footer-link d-flex flex-column ">
+                            <h3 class="text-white mb-5 fw-bold">لینک های مفید</h3>
+                            <a href="store.html" class="text-decoration-none"><i class="fa-solid fa-caret-left "></i><span class="mx-3">فروشگاه</span></a>
+                            <a href="404.html" class="text-decoration-none"><i class="fa-solid fa-caret-left "></i><span class="mx-3">وبلاگ</span></a>
+                            <a href="404.html" class="text-decoration-none"><i class="fa-solid fa-caret-left "></i><span class="mx-3">محصولات منتخب</span></a>
+                            <a href="about.html" class="text-decoration-none"><i class="fa-solid fa-caret-left "></i><span class="mx-3">درباره ما</span></a>
+                            <a href="contact.html" class="text-decoration-none"><i class="fa-solid fa-caret-left "></i><span class="mx-3">ارتباط با ما</span></a>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 mx-auto footer-link d-flex flex-column">
+                            <h4 class="text-white mb-5 fw-bold">دوره های آموزشی</h4>
+                            <a href="404.html" class="text-decoration-none"><i class="fa-solid fa-caret-left "></i><span class="mx-3">فرانت اند</span></a>
+                            <a href="404.html" class="text-decoration-none"><i class="fa-solid fa-caret-left "></i><span class="mx-3">بک اند</span></a>
+                            <a href="404.html" class="text-decoration-none"><i class="fa-solid fa-caret-left "></i><span class="mx-3">موبایل</span></a>
+                            <a href="404.html" class="text-decoration-none"><i class="fa-solid fa-caret-left "></i><span class="mx-3">بوت کمپ</span></a>
+                            <a href="404.html" class="text-decoration-none"><i class="fa-solid fa-caret-left "></i><span class="mx-3">طراحی UI و UX</span></a>
+                        </div> 
+                        <div class="col-12 col-md-6 col-lg-3 mx-auto">
+                            <h4 class="text-white mb-5 fw-bold">عضویت در خبرنامه</h4>
+                            <p class="text-white">برای اطلاع از آخرین اخبار و بروز رسانی دوره ها در خبرنامه عضو شوید :</p>
+                            <div class="real mt-5">
+                                <input type="email" placeholder=" ایمیل خود را وارد کنید ..." name="eml" class=" w-100 p-3 rounded-2 border-0">
+                                <button class="btn fw-bold btn-ab text-white">ارسال</button>
+                            </div>
+                        </div> 
+                        <div class="copyright mt-4">
+                            <div class="row">
+                                <div class="col-12 text-center">
+                                    <span class="text-white">Designed By </span><a class="text-decoration-none fw-bold text-white" href="#">Saeid Bahjat</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

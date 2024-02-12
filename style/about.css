@@ -1,0 +1,128 @@
+.qoute {
+  font-size: 100px;
+}
+
+.card-footer {
+  background-color: #0437f2;
+}
+
+.social-2 a {
+  margin: 0px auto;
+  width: 35px;
+  height: 35px;
+  padding: 8px;
+  color: #fff;
+  text-align: center;
+  line-height: 20px;
+  font-size: 18px;
+}
+
+.social-2 > a:hover {
+  background-color: #fff;
+  color: #0437f2;
+  border-radius: 50%;
+  transition: all 0.2s;
+}
+
+@media all and (max-width: 767.999px) {
+  .out-team-image img {
+    margin-top: 100px;
+    width: 100%;
+  }
+  .out-team-image img {
+    margin-top: 100px;
+    width: 90vw;
+  }
+  .manager {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .manager img {
+    width: 100%;
+  }
+  .manager p {
+    font-size: 20px;
+    width: 100%;
+  }
+  .manager-t {
+    margin-top: 25px;
+  }
+  .margin-to {
+    margin-top: 100px;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 1023.999px) {
+  .out-team-image img {
+    margin-top: 100px;
+    width: 90vw;
+  }
+  .manager {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .manager img {
+    width: 50vw;
+  }
+  .manager p {
+    font-size: 20px;
+    width: 100%;
+  }
+  .manager-t {
+    margin-top: 25px;
+  }
+  .margin-to {
+    margin-top: 130px;
+  }
+}
+@media all and (min-width: 1024px) and (max-width: 1199.99px) {
+  .out-team-image img {
+    margin-top: 100px;
+    width: 91vw;
+  }
+  .manager {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .manager img {
+    width: 40vw;
+  }
+  .manager p {
+    font-size: 18px;
+  }
+  .margin-to {
+    margin-top: 150px;
+  }
+}
+@media all and (min-width: 1200px) {
+  .out-team-image img {
+    margin-top: 100px;
+    width: 77vw;
+  }
+  .manager {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .manager img {
+    width: 30vw;
+  }
+  .manager p {
+    font-size: 20px;
+  }
+  .margin-to {
+    margin-top: 220px;
+  }
+}
+
+/*# sourceMappingURL=about.css.map */

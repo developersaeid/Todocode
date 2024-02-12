@@ -1,0 +1,119 @@
+$radiusRight:0px 30px 30px 0px;
+$radiusLeft:30px 0px 0px 30px;
+
+@media all and (max-width: 767.999px) {
+    .login-display {
+      display: flex; 
+      flex-wrap: wrap;
+      align-items: center; 
+      justify-content: center; 
+      margin-top: 20px;
+    }
+    .login-form {
+      width: 390px;
+      height: 497px;
+      padding: 50px;
+      border-radius: 30px;
+    }
+    .login-image {
+      display: none;
+    }
+    .form-group {
+      display: flex;
+      flex-direction: column;
+    }
+    .form-group input {
+      width: 100%;
+    }
+}
+
+@media all and (min-width:768px) and (max-width:1023.999px) {
+    .login-display {
+      display: flex; 
+      flex-wrap: nowrap;
+      align-items: center; 
+      justify-content: center; 
+      margin-top: 20px;
+    }
+    .form-group {
+      display: flex;
+      flex-direction: column;
+    }
+    .form-group input {
+      width: 100%;
+    }
+    .login-form {
+      width: 600px;
+      height: 497px;
+      padding: 60px;
+    }
+    .login-image {
+      display: none;
+    }
+
+}
+
+@media all and (min-width:1024px) and (max-width:1199.99px) {
+    .login-display {
+      display: flex; 
+      flex-wrap: nowrap;
+      align-items: center; 
+      justify-content: center; 
+      margin:15px;
+    }
+    .form-group {
+      display: flex;
+      flex-direction: column;
+    }
+    .form-group input {
+      width: 80%;
+    }
+    .login-form {
+      width: 600px;
+      height: 497px;
+      padding: 70px;
+      border-radius: 0px 30px 30px 0px;
+    }
+    .login-image {
+      width: 300px; 
+      height: 500px; 
+      margin: auto 0px;
+      display: block;
+      border-radius: 30px 0px 0px 30px;
+    }
+    .login-image img {
+      border-radius: 30px 0px 0px 30px;
+    }
+}
+
+  @media all and (min-width: 1200px)  {
+    .login-display {
+      display: flex; 
+      flex-wrap: wrap;
+      align-items: center; 
+      justify-content: center; 
+      margin-top: 80px;
+    }
+    .form-group {
+      display: flex;
+      flex-direction: column;
+    }
+    .form-group input {
+      width: 100%;
+    }
+    .login-form {
+      width: 600px;
+      height: 497px;
+      padding: 90px;
+      border-radius: $radiusRight;
+    }
+    .login-image {
+      width: 300px; 
+      height: 500px; 
+      margin: auto 0px;
+      border-radius: $radiusLeft;
+    }
+    .login-image img {
+      border-radius: $radiusLeft;
+    }
+  }

@@ -1,0 +1,758 @@
+@font-face {
+  font-family: "plasma";
+  src: url("../font/PlasmaSquareDots-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "yekanbakh";
+  src: url("../font/YekanBakh-SemiBold.woff") format("woff");
+}
+@font-face {
+  font-family: "yekanbakh-bold";
+  src: url("../font/YekanBakh-ExtraBold.woff") format("woff");
+}
+
+@media all and (max-width: 767.999px) {
+  .margin-404 {
+    margin-top: 110px;
+  }
+  .green-txt {
+    color: rgb(0, 194, 32);
+    font-size: 20px;
+  }
+  .menu-top {
+    position: fixed;
+    background: #fff;
+    z-index: 101;
+    border-bottom: 0 !important;
+  }
+  .menu {
+    padding: 10px 20px;
+    position: fixed;
+    background: #fff;
+    z-index: 100;
+    margin-top: 90px;
+    box-shadow: 0px 0px 8px rgb(175, 175, 175);
+  }
+  .search {
+    display: none;
+  }
+  .dis-non-mobile {
+    display: none;
+  }
+  .nav-item {
+    display: none;
+  }
+  .margin-top {
+    margin-top: 90px;
+  }
+  .swiper-slide {
+    text-align: justify;
+  }
+  .swiper-slide button {
+    padding: 10px 20px;
+  }
+  h1 {
+    margin-top: 40px;
+    font-family: "plasma";
+    font-size: 36px;
+  }
+  .h3 {
+    margin-top: 20px;
+  }
+  .developer img {
+    display: none;
+  }
+  .mini-banner-margin img {
+    margin-top:20px;
+  }
+  .comm-img img {
+    width: 120px;
+    height: 120px;
+  }
+  .comm-text h4, .comm-text h6 {
+    font-size: 16px;
+  }
+  .social i {
+    margin: 0px 3px;
+    padding: 5px;
+    font-size: 14px;
+  }
+  .btn-ab {
+    position: absolute;
+    right: 305px;
+    top: 5px;
+  }
+  .real input[type=email] {
+    font-size: 10px;
+  }
+  .td-bg {
+    color: #0437f2;
+    font-size: 35px;
+  }
+  .sev-item {
+    margin: 35px;
+  }
+  .sev-item h6 {
+    margin: 0px 7px;
+    line-height: 23px;
+    font-size: 14px;
+  }
+  .sev-item img {
+    width: 25px;
+  }
+  .card-body {
+    padding: 13px;
+  }
+  .margin-t {
+    margin-top: 30px;
+  }
+  .course-link {
+    text-decoration: none;
+    color: #0437f2;
+    font-family: "yekanbakh";
+    font-size: 15px;
+    margin-left: 10px;
+  }
+  .swiper {
+    width: 100%;
+    height: 320px;
+  }
+  .swiper-2 {
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+  .swiper-3 {
+    width: 100%;
+    height: auto;
+    padding-left: 13px !important;
+    padding-right: 13px !important;
+  }
+  .swiper-4 {
+    width: 100%;
+    height: 640px;
+    background: #0437f2;
+    border-radius: 10px;
+    margin-bottom: 100px;
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+  }
+  .slide-size {
+    width: 100% !important;
+  }
+  .card-detail p {
+    padding: 0px 100px;
+    text-align: justify;
+    color: #333333;
+  }
+  .margin-top-2 {
+    margin-top: 60px;
+  }
+  .margin-footer {
+    margin-top: 30px;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 1023.999px) {
+  .margin-404 {
+    margin-top: 140px;
+  }
+  .green-txt {
+    color: rgb(0, 194, 32);
+    font-size: 14px;
+  }
+  .menu-top {
+    position: fixed;
+    background: #fff;
+    z-index: 101;
+  }
+  .menu {
+    padding: 10px 20px;
+    position: fixed;
+    background: #fff;
+    height: 50px;
+    z-index: 100;
+    margin-top: 80px;
+    box-shadow: #333333;
+  }
+  .search {
+    display: block;
+  }
+  .dis-non-tablet {
+    display: none;
+  }
+  .nav-item {
+    display: none;
+  }
+  h1 {
+    margin-top: 40px;
+    text-align: center;
+    font-family: "plasma";
+    font-size: 40px;
+  }
+  .text-c {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .developer img {
+    width: 450px;
+    margin-right: 170px;
+  }
+  .comm-img img {
+    width: 120px;
+    height: 120px;
+  }
+  .comm-text h4, .comm-text h6 {
+    font-size: 16px;
+  }
+  .social i {
+    margin: 0px 3px;
+    padding: 5px;
+    font-size: 14px;
+  }
+  .btn-ab {
+    position: absolute;
+    right: 265px;
+    top: 5px;
+  }
+  .real input[type=email] {
+    font-size: 10px;
+  }
+  .td-bg {
+    color: #0437f2;
+    font-size: 40px;
+  }
+  .sev-item {
+    margin: 35px;
+  }
+  .sev-item h6 {
+    margin: 0px 7px;
+    line-height: 23px;
+    font-size: 14px;
+  }
+  .sev-item img {
+    width: 25px;
+  }
+  .card-body {
+    padding: 13px;
+  }
+  .margin-t {
+    margin-top: 30px;
+  }
+  .course-link {
+    text-decoration: none;
+    color: #0437f2;
+    font-family: "yekanbakh";
+    font-size: 18px;
+    margin-left: 10px;
+  }
+  .swiper {
+    width: 100%;
+    height: 320px;
+  }
+  .swiper-2 {
+    width: 100%;
+    height: auto;
+  }
+  .swiper-3 {
+    width: 100%;
+    height: auto;
+  }
+  .swiper-4 {
+    width: 100%;
+    height: 600px;
+    background: #0437f2;
+    border-radius: 10px;
+    margin-bottom: 100px;
+    padding-left: 2px !important;
+    padding-right: 5px !important;
+  }
+  .slide-size {
+    width: 43% !important;
+  }
+  .card-detail p {
+    padding: 0px 100px;
+    text-align: justify;
+    color: #333333;
+  }
+  .margin-top-2 {
+    margin-top: 70px;
+  }
+}
+@media all and (min-width: 1024px) and (max-width: 1199.99px) {
+  .margin-404 {
+    margin-top: 140px;
+  }
+  .green-txt {
+    color: rgb(0, 194, 32);
+    font-size: 14px;
+  }
+  .del-fs {
+    font-size: 10px;
+  }
+  .nav-item {
+    display: block;
+  }
+  h3 {
+    font-size: 20px !important;
+    text-align: right;
+  }
+  h1 {
+    font-family: "plasma";
+    text-align: right;
+    font-size: 40px;
+  }
+  .text-c {
+    text-align: right;
+    margin-top: 20px;
+  }
+  .developer img {
+    width: 430px;
+    margin: 0px auto;
+  }
+  .comm-img img {
+    width: 120px;
+    height: 120px;
+  }
+  .comm-text h4, .comm-text h6 {
+    font-size: 16px;
+  }
+  .social i {
+    margin: 0px 3px;
+    padding: 5px;
+    font-size: 14px;
+  }
+  .btn-ab {
+    position: absolute;
+    right: 140px;
+    top: 5px;
+  }
+  .real input[type=email] {
+    font-size: 10px;
+  }
+  .td-bg {
+    color: #0437f2;
+    font-size: 50px;
+  }
+  .sev-item h6 {
+    margin: 0px 7px;
+    line-height: 23px;
+    font-size: 14px;
+  }
+  .sev-item img {
+    width: 25px;
+  }
+  .card-body {
+    padding: 13px;
+  }
+  .margin-t {
+    margin-top: 30px;
+  }
+  .mar-t {
+    margin: auto 0px;
+  }
+  .course-link {
+    text-decoration: none;
+    color: #0437f2;
+    font-family: "yekanbakh";
+    font-size: 20px;
+    margin-left: 10px;
+  }
+  .swiper {
+    width: 100%;
+    height: 70%;
+  }
+  .margin-top {
+    margin-top: 110px;
+  }
+  .mini-banner-margin {
+    margin-top: 40px;
+  }
+  .swiper-2 {
+    width: 100%;
+    height: auto;
+  }
+  .swiper-3 {
+    width: 100%;
+    height: auto;
+  }
+  .swiper-4 {
+    width: 100%;
+    height: 620px;
+    background: #0437f2;
+    border-radius: 10px;
+    margin-bottom: 100px;
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+  }
+  .slide-size {
+    width: 40% !important;
+  }
+  .menu-top {
+    position: fixed;
+    background: #fff;
+    z-index: 101;
+  }
+  .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: fixed;
+    background: #fff;
+    z-index: 100;
+    margin-top: 83px;
+    box-shadow: 0px 0px 8px rgb(175, 175, 175);
+  }
+  .margin-top-2 {
+    margin-top: 100px;
+  }
+}
+@media all and (min-width: 1200px) {
+  .green-txt {
+    color: rgb(0, 194, 32);
+    font-size: 14px;
+  }
+  .margin-top {
+    margin-top: 110px;
+  }
+  .margin-top-2 {
+    margin-top: 100px;
+  }
+  .developer img {
+    width: 650px;
+    margin-right: 70px;
+  }
+  .sev-item img {
+    width: 35px;
+  }
+  .sev-item h6 {
+    margin: 0px 7px;
+    line-height: 30px;
+    font-size: 20px;
+  }
+  video {
+    width: 635px;
+    height: 400px;
+  }
+  .comm-img img {
+    width: 150px;
+    height: 150px;
+  }
+  .social i {
+    margin: 0px 5px;
+    width: 35px;
+    height: 35px;
+    padding: 8px;
+    color: #fff;
+    text-align: center;
+    line-height: 20px;
+  }
+  .btn-ab {
+    position: absolute;
+    right: 230px;
+    top: 10px;
+  }
+  h1 {
+    font-family: "plasma";
+    font-size: 65px;
+  }
+  .td-bg {
+    color: #0437f2;
+    font-size: 70px;
+  }
+  .sev-item h6 {
+    margin: 0px 10px;
+    line-height: 35px;
+    font-size: 18px;
+  }
+  .margin-t {
+    margin-top: 30px;
+  }
+  .mar-t {
+    margin: auto 0px;
+  }
+  .course-link {
+    text-decoration: none;
+    color: #0437f2;
+    font-family: "yekanbakh";
+    font-size: 20px;
+    margin-left: 10px;
+  }
+  .swiper {
+    width: 100%;
+    height: 80%;
+  }
+  .mini-banner-margin {
+    margin-top: 40px;
+  }
+  .swiper-2 {
+    width: 100%;
+    height: 450px;
+  }
+  .swiper-3 {
+    width: 100%;
+    height: 500px;
+  }
+  .swiper-4 {
+    width: 100%;
+    height: 620px;
+    background: #0437f2;
+    border-radius: 10px;
+    margin-bottom: 100px;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  .slide-size {
+    width: 30% !important;
+  }
+  .card-detail p {
+    padding: 0px 100px;
+    text-align: justify;
+    color: #333333;
+  }
+  .menu-top {
+    position: fixed;
+    background: #fff;
+    z-index: 101;
+  }
+  .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: fixed;
+    background: #fff;
+    z-index: 100;
+    margin-top: 83px;
+    box-shadow: 0px 0px 8px rgb(175, 175, 175);
+  }
+  .margin-404 {
+    margin-top: 140px;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "yekanbakh";
+}
+button {
+  background-color: #0437f2 !important;
+}
+button:hover {
+  background-color: rgb(47, 99, 255) !important;
+}
+.bg-dev {
+  background-color: #f0f9ff;
+}
+.logo img {
+  width: 30px;
+}
+.user-sec i {
+  color: #0437f2;
+  cursor: pointer;
+}
+.user-sec span {
+  color: #0437f2;
+  cursor: pointer;
+}
+.bg-main {
+  background-color: #f0f9ff;
+}
+.card-animate:hover {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  transform: scale(1.01);
+  transition: all 0.5s;
+}
+.footer-pattern {
+  background: url(../image/footer-pattern.png) no-repeat center center;
+  background-size: cover;
+}
+#cart-count {
+  background-color: rgb(255, 0, 0) !important;
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  padding: 7px;
+  line-height: 9px;
+  font-size: 12px;
+  position: absolute;
+  left: 82px;
+  top: 0px;
+  border-radius: 50px;
+}
+.cr {
+  width: 200px;
+  padding: 16px;
+  position: absolute;
+  text-align: center;
+  color: #f0f0f0;
+}
+.cr-top {
+  top: 23px;
+}
+.cr-bottom {
+  bottom: 25px;
+}
+.cr-left {
+  left: -50px;
+}
+.cr-right {
+  right: -50px;
+}
+.cr-top.cr-left, .cr-bottom.cr-right {
+  transform: rotate(-45deg);
+}
+.cr-top.cr-right, .cr-bottom.cr-left {
+  transform: rotate(45deg);
+}
+.cr-red {
+  background-color: #0437f2;
+}
+.cr-suggest {
+  background-color: #e70e0e;
+}
+.search {
+  width: 60%;
+  position: relative;
+}
+.search input {
+  height: 50px;
+  text-align: left;
+  font-family: "yekanbakh";
+  border: 2px solid #d6d4d4;
+}
+.search input:focus {
+  box-shadow: none;
+  border: 2px solid #0437f2;
+}
+.search button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-family: "yekanbakh";
+  height: 41px;
+  width: 60px !important;
+  background: #0437f2;
+}
+h2 {
+  font-family: "yekanbakh-bold";
+  text-align: center;
+}
+.card-b-1 {
+  position: relative;
+  background-color: #f0f9ff;
+  display: inline-block;
+  border-radius: 50%;
+  height: 110px;
+  width: 110px;
+}
+.card h5 {
+  font-family: "yekanbakh-bold";
+}
+.image-card {
+  position: absolute;
+  top: 22px;
+  right: 18px;
+}
+.image-card-1 {
+  position: absolute;
+  top: 26px;
+  right: 22px;
+}
+.image-card-2 {
+  position: absolute;
+  top: 28px;
+  right: 25px;
+}
+.image-card-3 {
+  position: absolute;
+  top: 30px;
+  right: 14px;
+}
+.just {
+  text-align: justify;
+}
+.select-item {
+  display: flex;
+  margin: 0px 10px;
+}
+.course-title h2 {
+  display: flex;
+  justify-content: space-between;
+}
+.course-span i {
+  font-size: 18px;
+  color: #0437f2;
+}
+.course-title span:hover {
+  color: rgb(17, 70, 155);
+}
+.card-body-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card-body-item a, .card-body-item i {
+  font-size: 13px;
+}
+.card-body-item a, .card-body-item i, .card-body-item span {
+  margin: 0px 5px;
+  line-height: 20px;
+  color: #848484;
+}
+.card-footer-item {
+  color: #848484;
+  margin: 0px 5px;
+}
+.front-tag {
+  background-color: #0437f2;
+  color: #fff;
+  padding: 3px 8px;
+  font-size: 12px;
+}
+.card-img-top img {
+  transition: all 1s;
+}
+.mt-com {
+  margin-top: 68px;
+}
+.pagi {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.page-item {
+  margin: 0px 15px;
+}
+.page-item a {
+  border-radius: 50px !important;
+  background-color: transparent;
+  border: 1px solid;
+  margin-bottom: 20px;
+}
+.bg-footer {
+  background-color: #0437f2;
+}
+.real {
+  position: relative;
+}
+.social i:hover {
+  background-color: #fff;
+  color: #0437f2 !important;
+}
+.footer-link a {
+  color: #fff;
+  cursor: pointer;
+  margin: 10px 0px;
+}
+.footer-link a:hover {
+  color: #000;
+}
+.image-404 {
+  width: 140vh;
+  margin: 0px auto;
+}
+
+/*# sourceMappingURL=style.css.map */

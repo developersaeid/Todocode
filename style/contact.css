@@ -1,0 +1,105 @@
+.contact-us {
+  margin-top: 170px;
+  margin-bottom: 40px;
+}
+
+.error-message {
+  color: rgb(255, 0, 0);
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.textarea-c {
+  width: 100%;
+  height: 90px;
+}
+
+.contact-us form {
+  padding: 0px 25px;
+}
+
+.contact-us form input {
+  width: 100%;
+  padding: 5px;
+}
+
+@media all and (max-width: 767.999px) {
+  .card-body {
+    display: flex;
+    flex-direction: column;
+  }
+  .map-container {
+    margin-top: 5px;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+  }
+  .map-container iframe {
+    left: 0;
+    top: 10;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 1023.999px) {
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .map-container {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+  }
+  .map-container iframe {
+    left: 0;
+    top: 10;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+}
+@media all and (min-width: 1024px) and (max-width: 1199.99px) {
+  .card-body {
+    display: flex;
+    flex-direction: row;
+  }
+  .map-container {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+  }
+  .map-container iframe {
+    left: 0;
+    top: 10;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+}
+@media all and (min-width: 1200px) {
+  .card-body {
+    display: flex;
+    flex-direction: row;
+  }
+  .map-container {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+  }
+  .map-container iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+}
+
+/*# sourceMappingURL=contact.css.map */
